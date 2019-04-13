@@ -3,7 +3,7 @@
 
 int main()
 {
-    ice::jacobi<> jb{129, 65 , 65};
-    jb.compute(200);
+    ice::jacobi<> jb{128, 64 , 64};
+    jb.compute(20);
 }
 
