@@ -3,6 +3,7 @@
 #include <array>
 #include <vector>
 #include <mpi.h>
+#include "timer.hh"
 
 #include <iostream>
 
@@ -77,9 +78,12 @@ struct jacobi
             || (p.z == 0 || p.z == len_k - 1);
     }
 
-    void compute(int nround)
+    void compute(int nround, bool debug = false)
     {
         value_type gosa{0.0};
+        timer total_timer;
+        MPI::COMM_WORLD.Barrier();
+        total_timer.restart();
         for (auto r = 0; r < nround; r++) {
             for (auto i = start; i < std::min(end, n); i++) {
                 auto p = coordinate(i);
@@ -123,9 +127,14 @@ struct jacobi
                         value[id(i, j, k)] = value[id(i, j, k)] + omega * ss;
                     }
 
-            if (!rank)
+            if (!rank && debug)
                 std::cerr << "iter " << r << ", gosa: " << gosa << "\n";
         }
+
+        MPI::COMM_WORLD.Barrier();
+        total_timer.stop();
+        if (!rank && debug)
+            std::cerr << "total time: " << total_timer.elapsed_seconds() << " s\n";
     }
 
     // constant

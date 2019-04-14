@@ -1,0 +1,22 @@
+[mask]
+policy = "deny"         # "allow" | "deny"
+selection = []
+
+[case.small]
+nround = 20
+len_i  = 128
+len_j  = 64
+len_k  = 64
+
+[case.medium]
+nround = 20
+len_i  = 256
+len_j  = 128
+len_k  = 128
+
+[case.large]
+nround = 20
+len_i  = 512
+len_j  = 256
+len_k  = 256
+
