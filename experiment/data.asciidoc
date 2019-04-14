@@ -16,16 +16,29 @@
 
 We run `20` iterations. All time are in seconds.
 
+=== Model size
+
+[cols="^.^2, ^.^3", options="header"]
+|====
+
+| size   | (len_i, len_j, len_k)
+| small  | (128, 64, 64)
+| medium | (256, 128, 128)
+| large  | (512, 256, 256)
+
+|====
+
 === himeno
 
 [cols="^.^2, ^.^3", options="header"]
 |====
 
-| size      | total time
-| small     | 0.084263
-| medium    | 0.784292
-| large     | 6.052673
+| size   | total time
+| small  | 0.084263
+| medium | 0.784292
+| large  | 6.052673
 
+|====
 
 === mpi
 
@@ -33,13 +46,13 @@ We run `20` iterations. All time are in seconds.
 [cols="^.^4, ^.^1", options="header"]
 |====
 
-| number of host / graph partition |  total time
-| 4                                |
-| 8                                |
-| 12                               |
-| 16                               |
-| 20                               |
-| 24                               |
+| number of host / graph partition | total time
+| 4                                | 0.094
+| 8                                | 0.062
+| 12                               | 0.067
+| 16                               | 0.057
+| 20                               | 0.107
+| 24                               | 0.137
 
 |====
 
@@ -47,13 +60,13 @@ We run `20` iterations. All time are in seconds.
 [cols="^.^4, ^.^1", options="header"]
 |====
 
-| number of host / graph partition |  total time
-| 4                                |
-| 8                                |
-| 12                               |
-| 16                               |
-| 20                               |
-| 24                               |
+| number of host / graph partition | total time
+| 4                                | 0.828
+| 8                                | 0.606
+| 12                               | 0.973
+| 16                               | 0.637
+| 20                               | 1.301
+| 24                               | 1.553
 
 |====
 
@@ -61,13 +74,13 @@ We run `20` iterations. All time are in seconds.
 [cols="^.^4, ^.^1", options="header"]
 |====
 
-| number of host / graph partition |  total time
-| 4                                |
-| 8                                |
-| 12                               |
-| 16                               |
-| 20                               |
-| 24                               |
+| number of host / graph partition | total time
+| 4                                | 6.688
+| 8                                | 4.889
+| 12                               | 7.16
+| 16                               | 5.277
+| 20                               | 9.71
+| 24                               | 12.073
 
 |====
 
