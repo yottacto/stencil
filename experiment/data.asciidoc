@@ -14,65 +14,60 @@
 
 == Results
 
-All time are in seconds.
+We run `20` iterations. All time are in seconds.
 
-=== small
+=== himeno
 
-[cols="^.^4, ^.^3, ^.^3, ^.^4, ^.^3", options="header"]
+[cols="^.^2, ^.^3", options="header"]
 |====
 
-| number of host / graph partition | round | total time (mpi) | total time (himeno)
-| 4                                | 200   |                  |
-| 8                                | 200   |                  |
-| 12                               | 200   |                  |
-| 16                               | 200   |                  |
-| 20                               | 200   |                  |
-| 24                               | 200   |                  |
+| size      | total time
+| small     | 0.084263
+| medium    | 0.784292
+| large     | 6.052673
 
+
+=== mpi
+
+.small
+[cols="^.^4, ^.^1", options="header"]
 |====
 
-=== medium
-
-[cols="^.^4, ^.^3, ^.^3, ^.^4, ^.^3", options="header"]
-|====
-
-| number of host / graph partition | round | total time (mpi) | total time (himeno)
-| 4                                | 200   |                  |
-| 8                                | 200   |                  |
-| 12                               | 200   |                  |
-| 16                               | 200   |                  |
-| 20                               | 200   |                  |
-| 24                               | 200   |                  |
+| number of host / graph partition |  total time
+| 4                                |
+| 8                                |
+| 12                               |
+| 16                               |
+| 20                               |
+| 24                               |
 
 |====
 
-=== large
-
-[cols="^.^4, ^.^3, ^.^3, ^.^4, ^.^3", options="header"]
+.medium
+[cols="^.^4, ^.^1", options="header"]
 |====
 
-| number of host / graph partition | round | total time (mpi) | total time (himeno)
-| 4                                | 200   |                  |
-| 8                                | 200   |                  |
-| 12                               | 200   |                  |
-| 16                               | 200   |                  |
-| 20                               | 200   |                  |
-| 24                               | 200   |                  |
+| number of host / graph partition |  total time
+| 4                                |
+| 8                                |
+| 12                               |
+| 16                               |
+| 20                               |
+| 24                               |
 
 |====
 
-=== ext.large
-
-[cols="^.^4, ^.^3, ^.^3, ^.^4, ^.^3", options="header"]
+.large
+[cols="^.^4, ^.^1", options="header"]
 |====
 
-| number of host / graph partition | round | total time (mpi) | total time (himeno)
-| 4                                | 200   |                  |
-| 8                                | 200   |                  |
-| 12                               | 200   |                  |
-| 16                               | 200   |                  |
-| 20                               | 200   |                  |
-| 24                               | 200   |                  |
+| number of host / graph partition |  total time
+| 4                                |
+| 8                                |
+| 12                               |
+| 16                               |
+| 20                               |
+| 24                               |
 
 |====
 
