@@ -42,45 +42,17 @@ We run `20` iterations. All time are in seconds.
 
 === mpi
 
-.small
-[cols="^.^3, ^.^2", options="header"]
+[cols="^.^3, ^.^2, ^.^2, ^.^2"]
 |====
 
-| number of host | total time
-| 4              | 0.094
-| 8              | 0.062
-| 12             | 0.067
-| 16             | 0.057
-| 20             | 0.107
-| 24             | 0.137
-
-|====
-
-.medium
-[cols="^.^3, ^.^2", options="header"]
-|====
-
-| number of host | total time
-| 4              | 0.828
-| 8              | 0.606
-| 12             | 0.973
-| 16             | 0.637
-| 20             | 1.301
-| 24             | 1.553
-
-|====
-
-.large
-[cols="^.^3, ^.^2", options="header"]
-|====
-
-| number of host | total time
-| 4              | 6.688
-| 8              | 4.889
-| 12             | 7.16
-| 16             | 5.277
-| 20             | 9.71
-| 24             | 12.073
+.2+h| number of host 3+h| total time
+                       h| small h| medium h| large
+    | 4                 | 0.094  | 0.828   | 6.688
+    | 8                 | 0.062  | 0.606   | 4.889
+    | 12                | 0.067  | 0.973   | 7.16
+    | 16                | 0.057  | 0.637   | 5.277
+    | 20                | 0.107  | 1.301   | 9.71
+    | 24                | 0.137  | 1.553   | 12.073
 
 |====
 
