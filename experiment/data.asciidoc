@@ -1,0 +1,78 @@
+:toc:
+
+= Results of stencil
+
+== Environment
+
+.ipe cluster
+* CPU: Intel(R) Xeon(R) CPU E5-2680 v4 (56) @ 2.40GHz
+* Memory: 125.925G
+
+.software
+* MPI: Open MPI 3.0.0
+* Compiler: gcc version 5.5.0
+
+== Results
+
+All time are in seconds.
+
+=== small
+
+[cols="^.^4, ^.^3, ^.^3, ^.^4, ^.^3", options="header"]
+|====
+
+| number of host / graph partition | round | total time (mpi) | total time (himeno)
+| 4                                | 200   |                  |
+| 8                                | 200   |                  |
+| 12                               | 200   |                  |
+| 16                               | 200   |                  |
+| 20                               | 200   |                  |
+| 24                               | 200   |                  |
+
+|====
+
+=== medium
+
+[cols="^.^4, ^.^3, ^.^3, ^.^4, ^.^3", options="header"]
+|====
+
+| number of host / graph partition | round | total time (mpi) | total time (himeno)
+| 4                                | 200   |                  |
+| 8                                | 200   |                  |
+| 12                               | 200   |                  |
+| 16                               | 200   |                  |
+| 20                               | 200   |                  |
+| 24                               | 200   |                  |
+
+|====
+
+=== large
+
+[cols="^.^4, ^.^3, ^.^3, ^.^4, ^.^3", options="header"]
+|====
+
+| number of host / graph partition | round | total time (mpi) | total time (himeno)
+| 4                                | 200   |                  |
+| 8                                | 200   |                  |
+| 12                               | 200   |                  |
+| 16                               | 200   |                  |
+| 20                               | 200   |                  |
+| 24                               | 200   |                  |
+
+|====
+
+=== ext.large
+
+[cols="^.^4, ^.^3, ^.^3, ^.^4, ^.^3", options="header"]
+|====
+
+| number of host / graph partition | round | total time (mpi) | total time (himeno)
+| 4                                | 200   |                  |
+| 8                                | 200   |                  |
+| 12                               | 200   |                  |
+| 16                               | 200   |                  |
+| 20                               | 200   |                  |
+| 24                               | 200   |                  |
+
+|====
+
